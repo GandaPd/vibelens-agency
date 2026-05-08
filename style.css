@@ -502,13 +502,14 @@ form button {
   border: none;
   border-radius: 0 8px 8px 0;
   cursor: pointer;
+  width: 50px;
 }
 
 /* Fleksibilitas */
 
 @media (max-width: 992px) {
   body {
-    font-size: 14px;
+    font-size: 15px;
   }
 
   .hamburger {
@@ -565,14 +566,17 @@ form button {
     grid-template-rows: auto auto;
     padding: 20px;
     border-radius: 12px 12px 0 0;
+    margin: 0 auto;
   }
 
   .footer,
   .about,
   .quick-link,
-  .social-media {
-    padding: 0 12px 50px 12px;
-    margin-bottom: 50px;
+  .social-media,
+  .newsletter {
+    padding: 0;
+    padding-bottom: 25px;
+    margin-bottom: 25px;
     border-right: none;
     border-bottom: 1px solid rgb(0 0 0 / 0.1);
   }
@@ -583,7 +587,7 @@ form button {
 
   .about img {
     display: block;
-    margin: 12px auto;
+    margin: 25px auto 0 auto;
     width: 75%;
   }
 
@@ -639,7 +643,14 @@ form button {
 
 @media (max-width: 480px) {
   body {
-    font-size: 12px;
+    font-size: 14px;
+  }
+
+  .navbar {
+    padding: 13px 27px;
+    border: 2px solid rgb(255 255 255 / 0.2);
+    box-shadow: 0 5px 21px rgb(0 0 0 / 0.08);
+    border-radius: 17px;
   }
 
   .hamburger {
@@ -653,12 +664,12 @@ form button {
   .menu {
     position: absolute;
     top: 110%; /* Muncul tepat di bawah navbar */
-    left: -100%; /* Sembunyi di kiri luar layar */
+    left: -110%; /* Sembunyi di kiri luar layar */
     width: 100%;
     height: 100vh;
     background-color: rgba(255, 255, 255, 0.95);
     transition: 0.4s;
-    padding-top: 50px;
+    padding-top: 33px;
   }
 
   .menu.active {
@@ -672,7 +683,7 @@ form button {
   }
 
   .menu ul li a {
-    font-size: 1.15em;
+    font-size: 1.25em;
   }
 
   .hero {
@@ -683,38 +694,41 @@ form button {
 
   .hero .hero-section {
     background-image: linear-gradient(to right, white, rgb(255 255 255 / 0.2));
-    padding: 150px 12px 12px 12px;
+    padding: 133px 16px 16px 16px;
   }
 
   .gallery .photography {
-    border-radius: 5px;
-    height: 62px;
+    border-radius: 7px;
+    height: 83px;
   }
 
   footer {
     grid-template-columns: 1fr;
     grid-template-rows: auto auto;
-    padding: 10px;
-    border-radius: 6px 6px 0 0;
+    padding: 13px;
+    border-radius: 8px 8px 0 0;
+    margin: 0 auto;
   }
 
   .footer,
   .about,
   .quick-link,
-  .social-media {
-    padding: 0 6px 25px 6px;
-    margin-bottom: 25px;
+  .social-media,
+  .newsletter {
+    padding: 0;
+    padding-bottom: 17px;
+    margin-bottom: 17px;
     border-right: none;
     border-bottom: 1px solid rgb(0 0 0 / 0.1);
   }
 
   .newsletter {
-    padding: 0 6px 0px 6px;
+    padding: 0 8px 0px 8px;
   }
 
   .about img {
     display: block;
-    margin: 6px auto;
+    margin: 17px auto 0 auto;
     width: 75%;
   }
 
@@ -727,11 +741,43 @@ form button {
     display: grid;
     grid-template-columns: repeat(6, auto);
     align-items: center;
-    gap: 5px;
+    gap: 3px;
     justify-content: start;
   }
 
   .social-media-item .sosmed-text {
-    margin-right: 15px;
+    margin-right: 20px;
+  }
+
+  .gallery {
+    padding: 0 7px 0 7px;
+  }
+
+  .photography {
+    padding: 3px;
+  }
+
+  .gallery .photography h3 {
+    z-index: 1;
+    bottom: 7px;
+    left: 8px;
+    text-align: left;
+    padding-right: 23px;
+    margin: 0;
+    padding: 0 27px 0 0;
+    font-size: 0.9em;
+  }
+
+  .gallery .photography p {
+    z-index: -1;
+    /* bottom: 7px;
+    left: 12px;
+    text-align: left;
+    padding-right: 35px; */
+  }
+
+  .gallery .photography button {
+    bottom: 8px;
+    right: 5px;
   }
 }
