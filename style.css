@@ -642,4 +642,64 @@ form button {
   .menu ul li a {
     font-size: 1.15em;
   }
+
+  .hero {
+    display: block;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .hero .hero-section {
+    background-image: linear-gradient(to right, white, rgb(255 255 255 / 0.2));
+    padding: 150px 12px 12px 12px;
+  }
+
+  .gallery .photography {
+    border-radius: 5px;
+    height: 62px;
+  }
+
+  footer {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    padding: 10px;
+    border-radius: 6px 6px 0 0;
+  }
+
+  .footer,
+  .about,
+  .quick-link,
+  .social-media {
+    padding: 0 6px 25px 6px;
+    margin-bottom: 25px;
+    border-right: none;
+    border-bottom: 1px solid rgb(0 0 0 / 0.1);
+  }
+
+  .newsletter {
+    padding: 0 6px 0px 6px;
+  }
+
+  .about img {
+    display: block;
+    margin: 6px auto;
+    width: 75%;
+  }
+
+  .quick-link ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .social-media-item {
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    align-items: center;
+    gap: 5px;
+    justify-content: start;
+  }
+
+  .social-media-item .sosmed-text {
+    margin-right: 15px;
+  }
 }
