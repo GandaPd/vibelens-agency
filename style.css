@@ -583,6 +583,7 @@ form button {
 
   .newsletter {
     padding: 0 12px 0px 12px;
+    border-bottom: none;
   }
 
   .about img {
@@ -724,6 +725,7 @@ form button {
 
   .newsletter {
     padding: 0 8px 0px 8px;
+    border-bottom: none;
   }
 
   .about img {
