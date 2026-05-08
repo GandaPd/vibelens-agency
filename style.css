@@ -8,21 +8,19 @@
 
 body {
   font-family: "Montserrat", sans-serif;
-  font-weight: 400px;
+  font-weight: 400;
   background-color: #ffffff;
   color: #111111;
   font-size: 16px;
 }
 
 h1 {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 800px;
+  font-weight: 800;
   text-transform: uppercase;
 }
 
 h2 {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700px;
+  font-weight: 700;
   font-size: 2em;
   margin-bottom: 25px;
 }
@@ -34,8 +32,7 @@ h3 {
 
 button,
 .navbar {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 500px;
+  font-weight: 500;
 }
 
 header {
